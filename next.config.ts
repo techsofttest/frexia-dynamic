@@ -21,9 +21,9 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "http",
-        hostname: "www.techsoftwebsolutions.com",
+        hostname: "demo.janamithrasociety.com",
         port: "",
-        pathname: "/techsoft/demo/frexia-back/public/uploads/**",
+        pathname: "/frexia/public/uploads/**",
       },
       {
         protocol: "https",

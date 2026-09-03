@@ -18,7 +18,7 @@ export default function ServiceContentBody({
         <div className="relative h-80 md:h-[440px] w-full rounded-2xl overflow-hidden border border-gray-100">
           <img
             src={service.image}
-            alt={service.name}
+            alt={service.title}
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
         </div>
@@ -34,7 +34,7 @@ export default function ServiceContentBody({
         </span>
 
         <h2 className="font-heading font-bold text-3xl md:text-4xl text-slate-800 mb-6">
-          Overview of <span className="text-frexia-blue">{service.name}</span>
+          Overview of <span className="text-frexia-blue">{service.title}</span>
         </h2>
 
         <p className="text-gray-700 text-lg leading-relaxed font-medium">
@@ -90,7 +90,7 @@ export default function ServiceContentBody({
       {service.benefits.length > 0 && (
         <div className="pt-6 border-t border-gray-100">
           <h3 className="font-heading font-bold text-2xl text-slate-800 mb-6">
-            Why Partner With Us For {service.name}?
+            Why Partner With Us For {service.title}?
           </h3>
 
           <div className="space-y-4">

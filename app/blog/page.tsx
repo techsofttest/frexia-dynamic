@@ -13,6 +13,8 @@ import { getContact } from "@/lib/contact";
 
 interface Blog {
   id: number;
+  tag: string;
+  created_at: string;
   title: string;
   slug: string;
   description: string;
