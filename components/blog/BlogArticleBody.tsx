@@ -92,7 +92,7 @@ export default function BlogArticleBody({ post }: BlogArticleBodyProps) {
         {post.features?.length > 0 && (
           <ul className="space-y-3">
             {post.features.map((feature, index) => (
-              <li key={index}>{feature}</li>
+              <li key={index} dangerouslySetInnerHTML={{ __html: feature }} />
             ))}
           </ul>
         )}
