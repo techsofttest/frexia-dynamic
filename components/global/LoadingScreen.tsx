@@ -44,7 +44,7 @@ export default function LoadingScreen() {
   // Truck position mirrors loading progress.
   // Moves from right (110%) to left (-110%) during loading.
   // Once progress hits 100%, the truck completes its path to the far left.
-  const truckX = progress < 100 ? `${110 - (progress * 2.2)}%` : "-110%";
+  const truckX = progress < 100 ? `${110 - progress * 2.2}%` : "-110%";
 
   return (
     <div
