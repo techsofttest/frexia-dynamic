@@ -201,18 +201,18 @@ export default function WhyChooseUs({
 
   return (
     <section className="bg-white text-frexia-dark w-full">
-      <div className="bg-frexia-blue w-full py-6 sm:py-8">
+      <div className="bg-[#fff4ee] w-full py-6 sm:py-8">
         <div className="max-w-7xl mx-auto px-6 sm:px-12 md:px-16 lg:px-24 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {companyAchievements.map((stat) => (
             <div
               key={stat.label}
               className="flex flex-col items-center text-center gap-0.5 sm:gap-1 py-1.5 sm:py-2"
             >
-              <span className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-white">
+              <span className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl">
                 {stat.value}
               </span>
 
-              <span className="text-orange-200 text-xs sm:text-sm font-medium">
+              <span className="text-xs sm:text-sm font-medium">
                 {stat.label}
               </span>
             </div>
