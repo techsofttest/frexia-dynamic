@@ -7,6 +7,7 @@ interface CoreValuesProps {
   whatDrivesUs: {
     content1?: {
       title?: string | null;
+      highlight?: string | null;
       description?: string | null;
     };
     content2?: CoreValue[];
@@ -100,13 +101,17 @@ export default function CoreValues({ whatDrivesUs }: CoreValuesProps) {
   return (
     <section className="bg-gray-50 text-frexia-dark w-full py-16 sm:py-20 px-6 sm:px-12 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto">
+        {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <span className="text-slate-500 text-xs font-bold tracking-widest uppercase mb-2 sm:mb-3 block">
             What Drives Us
           </span>
 
           <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4 text-slate-800">
-            {content1.title || "Our Core Values"}
+            {content1.title || "Our Core"}{" "}
+            {content1.highlight && (
+              <span className="text-gray-600">{content1.highlight}</span>
+            )}
           </h2>
 
           {content1.description && (
@@ -116,6 +121,7 @@ export default function CoreValues({ whatDrivesUs }: CoreValuesProps) {
           )}
         </div>
 
+        {/* Core Values */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {values.map((value, index) => (
             <div

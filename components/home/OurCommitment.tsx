@@ -10,6 +10,7 @@ interface OurCommitmentProps {
   ourCommitment: {
     content1?: {
       title?: string | null;
+      highlight?: string | null;
       description?: string | null;
       items?: CommitmentItem[];
     };
@@ -22,9 +23,8 @@ export default function OurCommitment({ ourCommitment }: OurCommitmentProps) {
 
   return (
     <section className="w-full flex flex-col md:flex-row min-h-[480px]">
-      {/* Left: full-height warehouse image */}{" "}
+      {/* Left: full-height warehouse image */}
       <div className="w-full md:w-[42%] relative min-h-[260px] sm:min-h-[340px] md:min-h-full">
-        {" "}
         <Image
           src="/warehouse/woman-safety-equipment-working.jpg"
           alt="Frexia Logistics Operations"
@@ -32,8 +32,9 @@ export default function OurCommitment({ ourCommitment }: OurCommitmentProps) {
           quality={95}
           sizes="(max-width: 768px) 100vw, 42vw"
           className="object-cover object-center"
-        />{" "}
+        />
       </div>
+
       {/* Right: white panel */}
       <div className="w-full md:w-[58%] bg-white text-frexia-dark flex flex-col justify-center border-y md:border-y-0 md:border-r border-gray-200">
         {/* Top: commitment text */}
@@ -42,9 +43,18 @@ export default function OurCommitment({ ourCommitment }: OurCommitmentProps) {
             Our Commitment
           </span>
 
-          {content1.title && (
+          {(content1.title || content1.highlight) && (
             <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl leading-tight mb-4 sm:mb-5 text-slate-800">
-              {content1.title}
+              {content1.title && <span>{content1.title}</span>}
+
+              {content1.highlight && (
+                <>
+                  {" "}
+                  <span className="text-gray-600 italic">
+                    {content1.highlight}
+                  </span>
+                </>
+              )}
             </h2>
           )}
 
