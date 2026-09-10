@@ -2,22 +2,22 @@
 
 @theme inline {
   /* Frexia Brand Colors */
-  --color-frexia-dark: #2D3748;
+  --color-frexia-dark: #2d3748;
   /* Dark Silver Gray for headings/text */
-  --color-frexia-blue: #BF7A50;
-  /* Brand Orange (#BF7A50) */
-  --color-frexia-blue-hover: #A5643C;
-  /* Darker Hover shade for #BF7A50 */
-  --color-frexia-blue-light: #FFF4EE;
+  --color-frexia-blue: #e66418;
+  /* Brand Orange (#E66418) */
+  --color-frexia-blue-hover: #a5643c;
+  /* Darker Hover shade for #E66418 */
+  --color-frexia-blue-light: #fff4ee;
   /* Light Orange tint for backgrounds */
-  --color-frexia-orange: #BF7A50;
-  /* Brand Orange (#BF7A50) */
-  --color-frexia-orange-hover: #A5643C;
-  /* Darker Hover shade for #BF7A50 */
-  --color-frexia-orange-light: #FFF4EE;
+  --color-frexia-orange: #e66418;
+  /* Brand Orange (#E66418) */
+  --color-frexia-orange-hover: #a5643c;
+  /* Darker Hover shade for #E66418 */
+  --color-frexia-orange-light: #fff4ee;
   /* Light Orange tint for backgrounds */
-  --color-frexia-light: #F8FAFC;
-  --color-frexia-gray: #4A5568;
+  --color-frexia-light: #f8fafc;
+  --color-frexia-gray: #4a5568;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -27,12 +27,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0A1128;
+  --foreground: #0a1128;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0A1128;
+    --background: #0a1128;
     --foreground: #ffffff;
   }
 }
@@ -60,38 +60,83 @@ h6 {
 
 /* Telephone shake keyframes */
 @keyframes shake-bell {
-  0%, 100% { transform: rotate(90deg) scale(1); }
-  5%, 15%, 25% { transform: rotate(80deg) scale(1.1); }
-  10%, 20%, 30% { transform: rotate(100deg) scale(1.1); }
-  35% { transform: rotate(90deg) scale(1); }
+  0%,
+  100% {
+    transform: rotate(90deg) scale(1);
+  }
+  5%,
+  15%,
+  25% {
+    transform: rotate(80deg) scale(1.1);
+  }
+  10%,
+  20%,
+  30% {
+    transform: rotate(100deg) scale(1.1);
+  }
+  35% {
+    transform: rotate(90deg) scale(1);
+  }
 }
 
 /* Glow ring keyframes */
 @keyframes pulse-ring {
-  0% { box-shadow: 0 0 0 0 rgba(191, 122, 80, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(191, 122, 80, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(191, 122, 80, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(191, 122, 80, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(191, 122, 80, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(191, 122, 80, 0);
+  }
 }
 
 /* Button horizontal wobble shake keyframes */
 @keyframes shake-button {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
-  20%, 40%, 60%, 80% { transform: translateX(2px); }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-2px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(2px);
+  }
 }
 
 /* WhatsApp green pulse ring */
 @keyframes pulse-ring-whatsapp {
-  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-  70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
 }
 
 /* Contact Us white pulse ring */
 @keyframes pulse-ring-white {
-  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5); }
-  70% { box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
 }
 
 .animate-shake-bell {
