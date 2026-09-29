@@ -55,7 +55,7 @@ export default function MissionTech({
   const points = visionMissionCommitment?.content1 ?? [];
 
   return (
-    <section className="w-full bg-frexia-blue text-white grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/15">
+    <section className="w-full bg-[#BF7A50] text-white grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/15">
       {points.map((point, index) => (
         <div
           key={`${point.title}-${index}`}

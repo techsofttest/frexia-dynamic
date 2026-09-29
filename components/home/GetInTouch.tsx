@@ -104,7 +104,7 @@ export default function GetInTouch({
       className="w-full flex flex-col md:flex-row min-h-[640px]"
     >
       {/* LEFT: Blue form panel */}
-      <div className="w-full md:w-1/2 bg-frexia-blue text-white px-6 sm:px-10 md:px-12 lg:px-16 py-16 flex flex-col justify-center gap-8">
+      <div className="w-full md:w-1/2 bg-[#BF7A50] text-white px-6 sm:px-10 md:px-12 lg:px-16 py-16 flex flex-col justify-center gap-8">
         <div>
           <span className="text-orange-200 text-xs font-bold tracking-widest uppercase mb-3 block">
             Request a Quote

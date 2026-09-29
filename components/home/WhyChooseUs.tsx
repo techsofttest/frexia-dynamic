@@ -237,7 +237,7 @@ export default function WhyChooseUs({
           </div>
 
           {content1.experience && (
-            <div className="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-6 bg-frexia-blue text-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-2xl z-10">
+            <div className="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-6 bg-[#BF7A50] text-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-2xl z-10">
               <div className="font-heading font-bold text-2xl sm:text-4xl">
                 {content1.experience.value}
               </div>
@@ -281,7 +281,7 @@ export default function WhyChooseUs({
           />
         </div>
 
-        <div className="w-full md:w-[58%] bg-frexia-blue text-white grid grid-cols-2 divide-x divide-y divide-white/15">
+        <div className="w-full md:w-[58%] bg-[#BF7A50] text-white grid grid-cols-2 divide-x divide-y divide-white/15">
           {sidebarFeatures.map((feature) => (
             <div
               key={feature.title}
@@ -308,11 +308,11 @@ export default function WhyChooseUs({
       </div>
 
       <div className="w-full">
-        <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 divide-x divide-y md:divide-y-0 divide-white/15 border-t border-white/15 items-stretch bg-frexia-blue">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 divide-x divide-y md:divide-y-0 divide-white/15 border-t border-white/15 items-stretch bg-[#BF7A50]">
           {bottomFeatures.map((item, index) => (
             <div
               key={item.title}
-              className={`flex items-center gap-3 sm:gap-4 bg-frexia-blue text-white p-4 sm:p-6 lg:p-8 rounded-none hover:bg-frexia-blue-hover transition-all duration-300 text-left ${
+              className={`flex items-center gap-3 sm:gap-4 bg-[#BF7A50] text-white p-4 sm:p-6 lg:p-8 rounded-none hover:bg-frexia-blue-hover transition-all duration-300 text-left ${
                 index === bottomFeatures.length - 1
                   ? "col-span-2 sm:col-span-2 md:col-span-1"
                   : ""

@@ -58,7 +58,7 @@ export default function IndustriesServe({ industries }: IndustriesServeProps) {
   };
 
   return (
-    <section className="bg-frexia-blue text-white w-full py-16 sm:py-20 px-6 sm:px-12 md:px-16 lg:px-24">
+    <section className="bg-[#BF7A50] text-white w-full py-16 sm:py-20 px-6 sm:px-12 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
         {/* ==================================================
             LEFT: IMAGE CAROUSEL
