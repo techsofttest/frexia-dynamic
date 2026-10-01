@@ -109,7 +109,7 @@ export default function GetInTouch({
           <span className="text-orange-700 text-xs font-bold tracking-widest uppercase mb-3 block">
             Request a Quote
           </span>
-          <h2 className="text-slate-700 font-bold text-3xl md:text-4xl leading-tight mb-2">
+          <h2 className="text-slate-800 font-bold text-3xl md:text-4xl leading-tight mb-2">
             Get a Quote Today
           </h2>
           <p className="text-black text-base">
