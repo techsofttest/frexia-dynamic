@@ -58,7 +58,7 @@ export default function IndustriesServe({ industries }: IndustriesServeProps) {
   };
 
   return (
-    <section className="bg-[#BF7A50] text-white w-full py-16 sm:py-20 px-6 sm:px-12 md:px-16 lg:px-24">
+    <section className="bg-gray-200 text-white w-full py-16 sm:py-20 px-6 sm:px-12 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
         {/* ==================================================
             LEFT: IMAGE CAROUSEL
@@ -96,17 +96,17 @@ export default function IndustriesServe({ industries }: IndustriesServeProps) {
 
         <div className="w-full md:w-1/2 flex flex-col gap-6 text-center md:text-left">
           {/* Section Label */}
-          <span className="text-white/90 text-xs font-bold tracking-widest uppercase">
+          <span className="text-black text-xs font-bold tracking-widest uppercase">
             Industries We Serve
           </span>
 
           {/* Current Industry */}
           <div className="min-h-[200px] sm:min-h-[180px] flex flex-col justify-start">
-            <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-white leading-tight mb-4">
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-black leading-tight mb-4">
               {currentIndustry.title}
             </h2>
 
-            <p className="text-white/90 text-base sm:text-lg leading-relaxed line-clamp-3">
+            <p className="text-black text-base sm:text-lg leading-relaxed line-clamp-3">
               {currentIndustry.description}
             </p>
           </div>
@@ -125,8 +125,8 @@ export default function IndustriesServe({ industries }: IndustriesServeProps) {
                   onClick={() => setCurrentSlide(idx)}
                   className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
                     idx === currentSlide
-                      ? "bg-white w-7"
-                      : "w-1.5 bg-white/30 hover:bg-white/60"
+                      ? "bg-frexia-blue w-7"
+                      : "w-1.5 bg-gray-300 hover:bg-white/60"
                   }`}
                   aria-label={`Go to ${industry.title}`}
                 />
@@ -139,7 +139,7 @@ export default function IndustriesServe({ industries }: IndustriesServeProps) {
               <button
                 type="button"
                 onClick={handlePrevious}
-                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full border-2 border-white/30 flex items-center justify-center hover:bg-white/10 hover:border-white transition-all duration-300 cursor-pointer"
+                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center bg-frexia-blue hover:bg-white/10 hover:border-white transition-all duration-300 cursor-pointer"
                 aria-label="Previous industry"
               >
                 <svg
@@ -158,7 +158,7 @@ export default function IndustriesServe({ industries }: IndustriesServeProps) {
               <button
                 type="button"
                 onClick={handleNext}
-                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white text-frexia-blue flex items-center justify-center hover:bg-orange-50 transition-all duration-300 cursor-pointer"
+                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center bg-frexia-blue hover:bg-white/10 hover:border-white transition-all duration-300 cursor-pointer"
                 aria-label="Next industry"
               >
                 <svg

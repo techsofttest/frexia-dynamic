@@ -281,24 +281,24 @@ export default function WhyChooseUs({
           />
         </div>
 
-        <div className="w-full md:w-[58%] bg-[#BF7A50] text-white grid grid-cols-2 divide-x divide-y divide-white/15">
+        <div className="w-full md:w-[58%] bg-[#fff4ee] text-black grid grid-cols-2 divide-x divide-y divide-white/15">
           {sidebarFeatures.map((feature) => (
             <div
               key={feature.title}
               className="flex flex-col items-center text-center gap-2.5 sm:gap-4 p-5 sm:px-8 sm:py-10 lg:px-10 lg:py-12 hover:bg-white/10 transition-colors duration-300 cursor-pointer group"
             >
-              <div className="w-11 h-11 sm:w-16 sm:h-16 rounded-full border-2 border-white/30 text-white flex items-center justify-center group-hover:border-white group-hover:bg-white/10 transition-all duration-300 shrink-0">
+              <div className="w-11 h-11 sm:w-16 sm:h-16 rounded-full border-2 border-slate-300 text-black flex items-center justify-center group-hover:border-slate-300 group-hover:bg-white/10 transition-all duration-300 shrink-0">
                 <div className="scale-75 sm:scale-100 flex items-center justify-center">
                   {feature.icon}
                 </div>
               </div>
 
               <div>
-                <h3 className="font-heading font-bold text-xs sm:text-base lg:text-lg text-white mb-1 sm:mb-2.5 group-hover:text-orange-200 transition-colors leading-tight">
+                <h3 className="font-heading font-bold text-xs sm:text-base lg:text-lg text-black mb-1 sm:mb-2.5 group-hover:text-black transition-colors leading-tight">
                   {feature.title}
                 </h3>
 
-                <p className="text-white text-xs sm:text-sm leading-relaxed max-w-xs">
+                <p className="text-black text-xs sm:text-sm leading-relaxed max-w-xs">
                   {feature.description}
                 </p>
               </div>
@@ -308,28 +308,28 @@ export default function WhyChooseUs({
       </div>
 
       <div className="w-full">
-        <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 divide-x divide-y md:divide-y-0 divide-white/15 border-t border-white/15 items-stretch bg-[#BF7A50]">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 divide-x divide-y md:divide-y-0 divide-white/15 border-t border-white/15 items-stretch bg-[#fff4ee]">
           {bottomFeatures.map((item, index) => (
             <div
               key={item.title}
-              className={`flex items-center gap-3 sm:gap-4 bg-[#BF7A50] text-white p-4 sm:p-6 lg:p-8 rounded-none hover:bg-frexia-blue-hover transition-all duration-300 text-left ${
+              className={`flex items-center gap-3 sm:gap-4 bg-[#fff4ee] text-white p-4 sm:p-6 lg:p-8 rounded-none hover:bg-frexia-blue-hover transition-all duration-300 text-left ${
                 index === bottomFeatures.length - 1
                   ? "col-span-2 sm:col-span-2 md:col-span-1"
                   : ""
               }`}
             >
-              <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-white/15 text-white flex items-center justify-center shrink-0 border border-white/10">
+              <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-white/15 text-black flex items-center justify-center shrink-0 border border-white/10">
                 <div className="scale-75 sm:scale-100 flex items-center justify-center">
                   {item.icon}
                 </div>
               </div>
 
               <div className="flex flex-col">
-                <h5 className="font-heading font-bold text-[11px] sm:text-xs text-white tracking-wider uppercase leading-tight">
+                <h5 className="font-heading font-bold text-[11px] sm:text-xs text-black tracking-wider uppercase leading-tight">
                   {item.title}
                 </h5>
 
-                <p className="text-white text-[11px] sm:text-xs mt-1 leading-snug">
+                <p className="text-black text-[11px] sm:text-xs mt-1 leading-snug">
                   {item.description}
                 </p>
               </div>

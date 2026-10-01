@@ -104,15 +104,15 @@ export default function GetInTouch({
       className="w-full flex flex-col md:flex-row min-h-[640px]"
     >
       {/* LEFT: Blue form panel */}
-      <div className="w-full md:w-1/2 bg-[#BF7A50] text-white px-6 sm:px-10 md:px-12 lg:px-16 py-16 flex flex-col justify-center gap-8">
+      <div className="w-full md:w-1/2 bg-[#fff4ee] px-6 sm:px-10 md:px-12 lg:px-16 py-16 flex flex-col justify-center gap-8">
         <div>
-          <span className="text-orange-200 text-xs font-bold tracking-widest uppercase mb-3 block">
+          <span className="text-orange-700 text-xs font-bold tracking-widest uppercase mb-3 block">
             Request a Quote
           </span>
-          <h2 className="font-heading font-bold text-3xl md:text-4xl leading-tight mb-2">
+          <h2 className="text-slate-700 font-bold text-3xl md:text-4xl leading-tight mb-2">
             Get a Quote Today
           </h2>
-          <p className="text-white text-base">
+          <p className="text-black text-base">
             Tell us about your cargo and we&apos;ll respond with a competitive
             rate within 2 business hours.
           </p>
@@ -151,7 +151,7 @@ export default function GetInTouch({
           )}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="flex flex-col gap-1.5">
-              <label className="text-white text-xs font-semibold uppercase tracking-wide">
+              <label className="text-black text-xs font-semibold uppercase tracking-wide">
                 Full Name
               </label>
               <input
@@ -161,14 +161,14 @@ export default function GetInTouch({
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="John Smith"
-                className="bg-white/10 border border-white/60 rounded-md px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-white/60 focus:bg-white/15 transition-colors"
+                className="bg-white/10 border border-white/60 rounded-md px-4 py-3 text-black placeholder-grey-300 text-sm focus:outline-none focus:border-white/60 focus:bg-white/15 transition-colors"
                 required
               />
             </div>
             <div className="flex flex-col gap-1.5">
               <label
                 htmlFor="contact-email"
-                className="text-white text-xs font-semibold uppercase tracking-wide"
+                className="text-black text-xs font-semibold uppercase tracking-wide"
               >
                 Email Address
               </label>
@@ -179,7 +179,7 @@ export default function GetInTouch({
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="john@company.com"
-                className="bg-white/10 border border-white/60 rounded-md px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-white/60 focus:bg-white/15 transition-colors"
+                className="bg-white/10 border border-white/60 rounded-md px-4 py-3 text-black placeholder-grey-300 text-sm focus:outline-none focus:border-white/60 focus:bg-white/15 transition-colors"
                 required
               />
             </div>
@@ -188,7 +188,7 @@ export default function GetInTouch({
             <div className="flex flex-col gap-1.5">
               <label
                 htmlFor="contact-phone"
-                className="text-white text-xs font-semibold uppercase tracking-wide"
+                className="text-black text-xs font-semibold uppercase tracking-wide"
               >
                 Phone Number
               </label>
@@ -199,14 +199,14 @@ export default function GetInTouch({
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="+971 55 000 0000"
-                className="bg-white/10 border border-white/60 rounded-md px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-white/60 focus:bg-white/15 transition-colors"
+                className="bg-white/10 border border-white/60 rounded-md px-4 py-3 text-black placeholder-grey-300 text-sm focus:outline-none focus:border-white/60 focus:bg-white/15 transition-colors"
               />
             </div>
             {/* Service */}
             <div className="flex flex-col gap-1.5">
               <label
                 htmlFor="contact-service"
-                className="text-white text-xs font-semibold uppercase tracking-wide"
+                className="text-black text-xs font-semibold uppercase tracking-wide"
               >
                 Service Type
               </label>
@@ -216,7 +216,7 @@ export default function GetInTouch({
                 name="service_id"
                 value={formData.service_id}
                 onChange={handleChange}
-                className="bg-white/10 border border-white/60 rounded-md px-4 py-3 text-white text-sm focus:outline-none focus:border-white/60 focus:bg-white/15 transition-colors appearance-none cursor-pointer"
+                className="bg-white/10 border border-white/60 rounded-md px-4 py-3 text-black text-sm focus:outline-none focus:border-white/60 focus:bg-white/15 transition-colors appearance-none cursor-pointer"
                 required
               >
                 <option value="" className="bg-frexia-blue">
@@ -238,7 +238,7 @@ export default function GetInTouch({
           <div className="flex flex-col gap-1.5">
             <label
               htmlFor="contact-message"
-              className="text-white text-xs font-semibold uppercase tracking-wide"
+              className="text-black text-xs font-semibold uppercase tracking-wide"
             >
               Message / Cargo Details
             </label>
@@ -249,7 +249,7 @@ export default function GetInTouch({
               onChange={handleChange}
               rows={4}
               placeholder="Describe your shipment requirements..."
-              className="bg-white/10 border border-white/60 rounded-md px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-white/60 focus:bg-white/15 transition-colors resize-none"
+              className="bg-white/10 border border-white/60 rounded-md px-4 py-3 text-black placeholder-grey-300 text-sm focus:outline-none focus:border-white/60 focus:bg-white/15 transition-colors resize-none"
             />
           </div>
           {/* Submit Button */}
@@ -257,7 +257,7 @@ export default function GetInTouch({
             type="submit"
             id="contact-submit-btn"
             disabled={isSubmitting}
-            className="w-full bg-white text-frexia-blue font-bold py-3.5 rounded-md hover:bg-orange-50 transition-colors duration-300 text-sm tracking-wide mt-1 disabled:opacity-60 disabled:cursor-not-allowed"
+            className="w-full bg-frexia-blue text-black font-bold py-3.5 rounded-md hover:bg-orange-50 transition-colors duration-300 text-sm tracking-wide mt-1 disabled:opacity-60 disabled:cursor-not-allowed"
           >
             {isSubmitting ? "Sending..." : "Send Request"}
           </button>

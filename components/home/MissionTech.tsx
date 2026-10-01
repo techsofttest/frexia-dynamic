@@ -55,25 +55,25 @@ export default function MissionTech({
   const points = visionMissionCommitment?.content1 ?? [];
 
   return (
-    <section className="w-full bg-[#BF7A50] text-white grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/15">
+    <section className="w-full bg-[#fff4ee] text-white grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/15">
       {points.map((point, index) => (
         <div
           key={`${point.title}-${index}`}
           className="flex flex-col items-center text-center gap-4 sm:gap-5 px-6 sm:px-10 py-12 sm:py-16 hover:bg-white/10 transition-colors duration-300 cursor-pointer group"
         >
           {" "}
-          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-white/30 text-white flex items-center justify-center group-hover:border-white group-hover:bg-white/10 transition-all duration-300 shrink-0">
+          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-slate-300 text-black flex items-center justify-center group-hover:border-black group-hover:bg-white/10 transition-all duration-300 shrink-0">
             {" "}
             <div className="scale-90 sm:scale-100 flex items-center justify-center">
               {icons[index % icons.length]}{" "}
             </div>{" "}
           </div>
           <div>
-            <h3 className="font-heading font-bold text-xl sm:text-2xl text-white mb-2 sm:mb-2.5 group-hover:text-orange-200 transition-colors">
+            <h3 className="font-heading font-bold text-xl sm:text-2xl text-black mb-2 sm:mb-2.5 group-hover:text-black transition-colors">
               {point.title}
             </h3>
 
-            <p className="text-white/90 text-sm leading-relaxed max-w-xs mx-auto">
+            <p className="text-black text-sm leading-relaxed max-w-xs mx-auto">
               {point.description}
             </p>
           </div>
