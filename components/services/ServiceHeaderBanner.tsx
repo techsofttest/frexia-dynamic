@@ -13,7 +13,7 @@ export default function ServiceHeaderBanner({
   categoryName = "Services",
 }: ServiceHeaderBannerProps) {
   return (
-    <section className="w-full bg-frexia-blue text-white pt-48 pb-16 px-6 sm:px-12 md:px-16 lg:px-24 relative overflow-hidden">
+    <section className="w-full bg-[#fff4ee] text-white pt-48 pb-16 px-6 sm:px-12 md:px-16 lg:px-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col gap-4 relative z-10">
         {/* Breadcrumb Navigation */}
         <motion.nav
@@ -23,15 +23,15 @@ export default function ServiceHeaderBanner({
           className="flex items-center gap-2 text-xs md:text-sm font-semibold tracking-wide text-white/80"
           aria-label="Breadcrumb"
         >
-          <Link href="/" className="hover:text-white transition-colors">
+          <Link href="/" className="hover:text-white text-gray-700">
             Home
           </Link>
-          <span className="text-white/60">/</span>
-          <Link href="/services" className="hover:text-white transition-colors">
+          <span className="text-slate-800">/</span>
+          <Link href="/services" className="hover:text-white text-gray-700">
             {categoryName}
           </Link>
-          <span className="text-white/60">/</span>
-          <span className="text-white font-bold">{title}</span>
+          <span className="text-slate-800">/</span>
+          <span className="text-gray-700 font-bold">{title}</span>
         </motion.nav>
 
         {/* Title */}
@@ -39,7 +39,7 @@ export default function ServiceHeaderBanner({
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="font-heading font-bold text-3xl md:text-4xl uppercase tracking-tight text-white"
+          className="font-heading font-bold text-3xl md:text-4xl uppercase tracking-tight text-slate-800"
         >
           {title}
         </motion.h1>

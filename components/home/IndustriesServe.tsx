@@ -96,13 +96,13 @@ export default function IndustriesServe({ industries }: IndustriesServeProps) {
 
         <div className="w-full md:w-1/2 flex flex-col gap-6 text-center md:text-left">
           {/* Section Label */}
-          <span className="text-black text-xs font-bold tracking-widest uppercase">
+          <span className="text-slate-500 text-xs font-bold tracking-widest uppercase">
             Industries We Serve
           </span>
 
           {/* Current Industry */}
           <div className="min-h-[200px] sm:min-h-[180px] flex flex-col justify-start">
-            <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-black leading-tight mb-4">
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-slate-800 leading-tight mb-4">
               {currentIndustry.title}
             </h2>
 

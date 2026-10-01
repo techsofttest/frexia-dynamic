@@ -264,7 +264,7 @@ export default function WhyChooseUs({
             </h2>
 
             {content1.description && (
-              <p className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed">
+              <p className="text-slate-800 text-sm sm:text-base md:text-lg leading-relaxed">
                 {content1.description}
               </p>
             )}
@@ -287,18 +287,18 @@ export default function WhyChooseUs({
               key={feature.title}
               className="flex flex-col items-center text-center gap-2.5 sm:gap-4 p-5 sm:px-8 sm:py-10 lg:px-10 lg:py-12 hover:bg-white/10 transition-colors duration-300 cursor-pointer group"
             >
-              <div className="w-11 h-11 sm:w-16 sm:h-16 rounded-full border-2 border-slate-300 text-black flex items-center justify-center group-hover:border-slate-300 group-hover:bg-white/10 transition-all duration-300 shrink-0">
+              <div className="w-11 h-11 sm:w-16 sm:h-16 rounded-full border-2 border-slate-300 text-slate-800 flex items-center justify-center group-hover:border-slate-300 group-hover:bg-white/10 transition-all duration-300 shrink-0">
                 <div className="scale-75 sm:scale-100 flex items-center justify-center">
                   {feature.icon}
                 </div>
               </div>
 
               <div>
-                <h3 className="font-heading font-bold text-xs sm:text-base lg:text-lg text-black mb-1 sm:mb-2.5 group-hover:text-black transition-colors leading-tight">
+                <h3 className="font-heading font-bold text-xs sm:text-base lg:text-lg text-slate-800 mb-1 sm:mb-2.5 group-hover:text-black transition-colors leading-tight">
                   {feature.title}
                 </h3>
 
-                <p className="text-black text-xs sm:text-sm leading-relaxed max-w-xs">
+                <p className="text-slate-800 text-xs sm:text-sm leading-relaxed max-w-xs">
                   {feature.description}
                 </p>
               </div>
@@ -325,7 +325,7 @@ export default function WhyChooseUs({
               </div>
 
               <div className="flex flex-col">
-                <h5 className="font-heading font-bold text-[11px] sm:text-xs text-black tracking-wider uppercase leading-tight">
+                <h5 className="font-heading font-bold text-[11px] sm:text-xs text-slate-800 tracking-wider uppercase leading-tight">
                   {item.title}
                 </h5>
 

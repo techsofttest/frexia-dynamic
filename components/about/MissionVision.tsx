@@ -44,7 +44,7 @@ export default function MissionVision({ missionVision }: MissionVisionProps) {
   }));
 
   return (
-    <section className="w-full bg-frexia-blue text-white py-14 sm:py-20 md:py-24 px-6 sm:px-12 md:px-16 lg:px-24 relative overflow-hidden">
+    <section className="w-full bg-[#fff4ee] text-white py-14 sm:py-20 md:py-24 px-6 sm:px-12 md:px-16 lg:px-24 relative overflow-hidden">
       {/* Background glow graphics */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
@@ -52,13 +52,13 @@ export default function MissionVision({ missionVision }: MissionVisionProps) {
       <div className="max-w-7xl mx-auto flex flex-col gap-10 sm:gap-16 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
-          <span className="text-white/80 text-xs font-bold tracking-widest uppercase mb-2 sm:mb-3 block">
+          <span className="text-slate-500 text-xs font-bold tracking-widest uppercase mb-2 sm:mb-3 block">
             Guiding Principles
           </span>
 
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight leading-tight sm:leading-none mb-3 sm:mb-4 text-white">
+          <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight leading-tight sm:leading-none mb-3 sm:mb-4 text-slate-800">
             Our Mission{" "}
-            <span className="font-normal text-white/90">&amp; Vision</span>
+            <span className="font-normal text-slate-700">&amp; Vision</span>
           </h2>
         </div>
 

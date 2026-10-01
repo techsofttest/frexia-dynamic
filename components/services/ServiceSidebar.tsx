@@ -57,25 +57,25 @@ export default function ServiceSidebar({
       {/* Quick Contact Sidebar Card */}
       {/* ------------------------------------------ */}
 
-      <div className="bg-frexia-blue text-white rounded-2xl p-8 relative overflow-hidden shadow-xl flex flex-col gap-4">
+      <div className="bg-[#fff4ee] text-white rounded-2xl p-8 relative overflow-hidden shadow-xl flex flex-col gap-4">
         <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl pointer-events-none" />
 
-        <span className="text-white/80 text-xs font-bold uppercase tracking-widest">
+        <span className="text-slate-500 text-xs font-bold uppercase tracking-widest">
           Need Fast Quote?
         </span>
 
-        <h4 className="font-heading font-bold text-2xl text-white">
+        <h4 className="font-heading font-bold text-2xl text-slate-800">
           Book Your Cargo Today
         </h4>
 
-        <p className="text-white/90 text-sm leading-relaxed">
+        <p className="text-gray-700 text-sm leading-relaxed">
           Contact our freight forwarding specialists for custom rates and
           tailored logistics solutions.
         </p>
 
         <a
           href="tel:+97142244022"
-          className="mt-2 inline-flex items-center justify-center gap-2 bg-white text-frexia-blue px-6 py-3 rounded-xl font-bold text-sm hover:bg-orange-50 transition-colors shadow-md"
+          className="mt-2 inline-flex items-center justify-center gap-2 bg-bg-frexia-blue text-frexia-blue px-6 py-3 rounded-xl font-bold text-sm hover:bg-orange-50 transition-colors shadow-md"
         >
           Call +971 4 224 4022
         </a>
