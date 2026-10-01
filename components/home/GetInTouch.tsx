@@ -127,7 +127,7 @@ export default function GetInTouch({
               <button
                 type="button"
                 onClick={() => setSuccessMessage("")}
-                className="text-white/80 hover:text-white text-xl leading-none font-bold transition-colors"
+                className="text-white/80 hover:shadow-2xl text-xl leading-none font-bold transition-colors"
                 aria-label="Close success message"
               >
                 ×
