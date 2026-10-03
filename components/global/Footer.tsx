@@ -45,7 +45,7 @@ export default async function Footer() {
         </div>
         {/* Column 2: Contact Info */}
         <div>
-          <h4 className="font-heading font-bold text-sm text-frexia-blue tracking-wider uppercase mb-6 font-black">
+          <h4 className="font-heading font-bold text-sm text-slate-800 tracking-wider uppercase mb-6 font-black">
             Contact Us
           </h4>
 
@@ -54,7 +54,7 @@ export default async function Footer() {
             {contact.phone && (
               <li className="flex flex-col gap-0.5">
                 {" "}
-                <span className="text-[10px] text-frexia-blue uppercase tracking-wider font-bold">
+                <span className="text-[10px] text-slate-800 uppercase tracking-wider font-bold">
                   {" "}
                   Phone{" "}
                 </span>{" "}
@@ -71,7 +71,7 @@ export default async function Footer() {
             {contact.email && (
               <li className="flex flex-col gap-0.5">
                 {" "}
-                <span className="text-[10px] text-frexia-blue uppercase tracking-wider font-bold">
+                <span className="text-[10px] text-slate-800 uppercase tracking-wider font-bold">
                   {" "}
                   Email{" "}
                 </span>{" "}
@@ -85,7 +85,7 @@ export default async function Footer() {
               </li>
             )}
             <li className="flex flex-col gap-0.5">
-              <span className="text-[10px] text-frexia-blue uppercase tracking-wider font-bold">
+              <span className="text-[10px] text-slate-800 uppercase tracking-wider font-bold">
                 Web
               </span>
 
@@ -102,7 +102,7 @@ export default async function Footer() {
         </div>
         {/* Column 3: Dynamic Services */}
         <div>
-          <h4 className="font-heading font-bold text-sm text-frexia-blue tracking-wider uppercase mb-6 font-black">
+          <h4 className="font-heading font-bold text-sm text-slate-800 tracking-wider uppercase mb-6 font-black">
             Our Services
           </h4>
 
@@ -122,7 +122,7 @@ export default async function Footer() {
         {/* Column 4: Dynamic Industries */}
         <div>
           {" "}
-          <h4 className="font-heading font-bold text-sm text-frexia-blue tracking-wider uppercase mb-6 font-black">
+          <h4 className="font-heading font-bold text-sm text-slate-800 tracking-wider uppercase mb-6 font-black">
             {" "}
             Industries Served{" "}
           </h4>{" "}
@@ -149,7 +149,7 @@ export default async function Footer() {
 
         {/* Column 5: Quick Links */}
         <div>
-          <h4 className="font-heading font-bold text-sm text-frexia-blue tracking-wider uppercase mb-6 font-black">
+          <h4 className="font-heading font-bold text-sm text-slate-800 tracking-wider uppercase mb-6 font-black">
             Quick Links
           </h4>
 

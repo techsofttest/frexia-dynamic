@@ -147,7 +147,7 @@ export default function ContactIsland() {
       {/* Contact Button */}
       <a
         href="tel:+97142244022"
-        className="flex flex-1 items-center justify-center gap-2 px-4 py-2 bg-frexia-blue text-white hover:bg-frexia-blue-hover font-semibold text-sm rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 cursor-pointer animate-pulse-ring-white animate-shake-button whitespace-nowrap min-h-[44px]"
+        className="flex flex-1 items-center justify-center gap-2 px-4 py-2 bg-gray-600 text-white hover:bg-gray-700 font-semibold text-sm rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 cursor-pointer animate-pulse-ring-white animate-shake-button whitespace-nowrap min-h-[44px]"
       >
         <svg
           className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0"
