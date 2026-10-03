@@ -50,7 +50,7 @@ export default function OurCommitment({ ourCommitment }: OurCommitmentProps) {
               {content1.highlight && (
                 <>
                   {" "}
-                  <span className="text-gray-600 italic">
+                  <span className="text-gray-700 italic">
                     {content1.highlight}
                   </span>
                 </>
@@ -59,7 +59,7 @@ export default function OurCommitment({ ourCommitment }: OurCommitmentProps) {
           )}
 
           {content1.description && (
-            <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl font-medium">
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl font-medium">
               {content1.description}
             </p>
           )}
@@ -116,7 +116,7 @@ export default function OurCommitment({ ourCommitment }: OurCommitmentProps) {
 
                 <Link
                   href={isCommodities ? "/industries" : "/services"}
-                  className="inline-flex items-center gap-1.5 sm:gap-2 bg-frexia-orange text-white px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-md font-semibold text-[11px] sm:text-xs hover:bg-frexia-orange-hover transition-colors w-fit mt-auto"
+                  className="inline-flex items-center gap-1.5 sm:gap-2 bg-frexia-orange text-white px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-md font-semibold text-[11px] sm:text-xs hover:bg-frexia-blue-hover transition-colors w-fit mt-auto"
                 >
                   {isCommodities ? "Commodities" : "Services"}
 

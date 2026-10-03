@@ -112,7 +112,7 @@ export default function GetInTouch({
           <h2 className="text-slate-800 font-bold text-3xl md:text-4xl leading-tight mb-2">
             Get a Quote Today
           </h2>
-          <p className="text-black text-base">
+          <p className="text-slate-700 text-base">
             Tell us about your cargo and we&apos;ll respond with a competitive
             rate within 2 business hours.
           </p>
@@ -151,7 +151,7 @@ export default function GetInTouch({
           )}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="flex flex-col gap-1.5">
-              <label className="text-black text-xs font-semibold uppercase tracking-wide">
+              <label className="text-slate-800 text-xs font-semibold uppercase tracking-wide">
                 Full Name
               </label>
               <input
@@ -168,7 +168,7 @@ export default function GetInTouch({
             <div className="flex flex-col gap-1.5">
               <label
                 htmlFor="contact-email"
-                className="text-black text-xs font-semibold uppercase tracking-wide"
+                className="text-slate-800 text-xs font-semibold uppercase tracking-wide"
               >
                 Email Address
               </label>
@@ -188,7 +188,7 @@ export default function GetInTouch({
             <div className="flex flex-col gap-1.5">
               <label
                 htmlFor="contact-phone"
-                className="text-black text-xs font-semibold uppercase tracking-wide"
+                className="text-slate-800 text-xs font-semibold uppercase tracking-wide"
               >
                 Phone Number
               </label>
@@ -206,7 +206,7 @@ export default function GetInTouch({
             <div className="flex flex-col gap-1.5">
               <label
                 htmlFor="contact-service"
-                className="text-black text-xs font-semibold uppercase tracking-wide"
+                className="text-slate-800 text-xs font-semibold uppercase tracking-wide"
               >
                 Service Type
               </label>
@@ -238,7 +238,7 @@ export default function GetInTouch({
           <div className="flex flex-col gap-1.5">
             <label
               htmlFor="contact-message"
-              className="text-black text-xs font-semibold uppercase tracking-wide"
+              className="text-slate-800 text-xs font-semibold uppercase tracking-wide"
             >
               Message / Cargo Details
             </label>
@@ -257,7 +257,7 @@ export default function GetInTouch({
             type="submit"
             id="contact-submit-btn"
             disabled={isSubmitting}
-            className="w-full bg-frexia-blue text-black font-bold py-3.5 rounded-md hover:bg-orange-50 transition-colors duration-300 text-sm tracking-wide mt-1 disabled:opacity-60 disabled:cursor-not-allowed"
+            className="w-full bg-frexia-blue font-bold py-3.5 rounded-md hover:bg-frexia-blue-hover transition-colors duration-300 text-sm tracking-wide mt-1 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
           >
             {isSubmitting ? "Sending..." : "Send Request"}
           </button>

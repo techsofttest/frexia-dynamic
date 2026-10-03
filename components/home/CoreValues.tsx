@@ -110,7 +110,7 @@ export default function CoreValues({ whatDrivesUs }: CoreValuesProps) {
           <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4 text-slate-800">
             {content1.title || "Our Core"}{" "}
             {content1.highlight && (
-              <span className="text-gray-600">{content1.highlight}</span>
+              <span className="text-gray-700">{content1.highlight}</span>
             )}
           </h2>
 

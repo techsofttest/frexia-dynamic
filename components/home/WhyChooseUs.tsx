@@ -264,7 +264,7 @@ export default function WhyChooseUs({
             </h2>
 
             {content1.description && (
-              <p className="text-slate-800 text-sm sm:text-base md:text-lg leading-relaxed">
+              <p className="text-slate-700 text-sm sm:text-base md:text-lg leading-relaxed">
                 {content1.description}
               </p>
             )}
@@ -298,7 +298,7 @@ export default function WhyChooseUs({
                   {feature.title}
                 </h3>
 
-                <p className="text-slate-800 text-xs sm:text-sm leading-relaxed max-w-xs">
+                <p className="text-slate-700 text-xs sm:text-sm leading-relaxed max-w-xs">
                   {feature.description}
                 </p>
               </div>
@@ -329,7 +329,7 @@ export default function WhyChooseUs({
                   {item.title}
                 </h5>
 
-                <p className="text-black text-[11px] sm:text-xs mt-1 leading-snug">
+                <p className="text-slate-700 text-[11px] sm:text-xs mt-1 leading-snug">
                   {item.description}
                 </p>
               </div>

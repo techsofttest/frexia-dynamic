@@ -106,7 +106,7 @@ export default function IndustriesServe({ industries }: IndustriesServeProps) {
               {currentIndustry.title}
             </h2>
 
-            <p className="text-black text-base sm:text-lg leading-relaxed line-clamp-3">
+            <p className="text-slate-700 text-base sm:text-lg leading-relaxed line-clamp-3">
               {currentIndustry.description}
             </p>
           </div>
@@ -139,7 +139,7 @@ export default function IndustriesServe({ industries }: IndustriesServeProps) {
               <button
                 type="button"
                 onClick={handlePrevious}
-                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center bg-frexia-blue hover:bg-white/10 hover:border-white transition-all duration-300 cursor-pointer"
+                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center bg-frexia-blue hover:bg-frexia-blue-hover hover:border-white transition-all duration-300 cursor-pointer"
                 aria-label="Previous industry"
               >
                 <svg
@@ -158,7 +158,7 @@ export default function IndustriesServe({ industries }: IndustriesServeProps) {
               <button
                 type="button"
                 onClick={handleNext}
-                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center bg-frexia-blue hover:bg-white/10 hover:border-white transition-all duration-300 cursor-pointer"
+                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center bg-frexia-blue hover:bg-frexia-blue-hover hover:border-white transition-all duration-300 cursor-pointer"
                 aria-label="Next industry"
               >
                 <svg

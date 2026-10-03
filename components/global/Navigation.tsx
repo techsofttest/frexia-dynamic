@@ -122,7 +122,7 @@ export default function Navigation() {
       {/* ==================================================
           TOP BLUE STRIP
       ================================================== */}
-      <div className="w-full bg-frexia-blue text-white py-2 px-4 sm:px-8 md:px-16 lg:px-24 flex items-center justify-between gap-2 text-xs font-semibold border-b border-white/10">
+      <div className="w-full bg-gray-600 text-white py-2 px-4 sm:px-8 md:px-16 lg:px-24 flex items-center justify-between gap-2 text-xs font-semibold border-b border-white/10">
         {/* Left: Contact Info */}
         <div className="flex items-center gap-4 md:gap-6 overflow-hidden">
           <div className="flex items-center gap-1.5 truncate">
