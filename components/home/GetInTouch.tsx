@@ -257,7 +257,7 @@ export default function GetInTouch({
             type="submit"
             id="contact-submit-btn"
             disabled={isSubmitting}
-            className="w-full bg-frexia-blue font-bold py-3.5 rounded-md hover:bg-frexia-blue-hover transition-colors duration-300 text-sm tracking-wide mt-1 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+            className="w-full bg-gray-600 font-bold py-3.5 rounded-md hover:bg-gray-700 transition-colors duration-300 text-sm tracking-wide mt-1 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
           >
             {isSubmitting ? "Sending..." : "Send Request"}
           </button>

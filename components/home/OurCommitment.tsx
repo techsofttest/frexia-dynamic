@@ -116,7 +116,7 @@ export default function OurCommitment({ ourCommitment }: OurCommitmentProps) {
 
                 <Link
                   href={isCommodities ? "/industries" : "/services"}
-                  className="inline-flex items-center gap-1.5 sm:gap-2 bg-frexia-orange text-white px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-md font-semibold text-[11px] sm:text-xs hover:bg-frexia-blue-hover transition-colors w-fit mt-auto"
+                  className="inline-flex items-center gap-1.5 sm:gap-2 bg-gray-600 text-white px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-md font-semibold text-[11px] sm:text-xs hover:bg-gray-700 transition-colors w-fit mt-auto"
                 >
                   {isCommodities ? "Commodities" : "Services"}
 

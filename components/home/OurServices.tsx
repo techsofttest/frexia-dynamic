@@ -32,7 +32,7 @@ export default function OurServices({ services, whatWeDo }: OurServicesProps) {
 
           <Link
             href="/services"
-            className="shrink-0 inline-flex items-center justify-center gap-2 bg-transparent sm:bg-frexia-blue text-frexia-blue sm:text-white border border-frexia-blue sm:border-transparent px-5 sm:px-7 py-2.5 sm:py-3 rounded-md font-semibold text-xs sm:text-sm hover:bg-frexia-blue hover:text-white sm:hover:bg-frexia-blue-hover transition-colors duration-300"
+            className="shrink-0 inline-flex items-center justify-center gap-2 bg-transparent sm:bg-gray-600 text-frexia-blue sm:text-white border border-frexia-blue sm:border-transparent px-5 sm:px-7 py-2.5 sm:py-3 rounded-md font-semibold text-xs sm:text-sm hover:bg-gray-700 hover:text-white sm:hover:bg-gray-700-hover transition-colors duration-300"
           >
             All Services
             <svg
@@ -88,7 +88,7 @@ export default function OurServices({ services, whatWeDo }: OurServicesProps) {
 
                 <Link
                   href={`/services/${service.slug}`}
-                  className="flex items-center justify-center gap-1.5 sm:gap-2 w-full bg-frexia-blue text-white font-bold text-xs sm:text-sm py-2.5 sm:py-3 rounded-md hover:bg-frexia-blue-hover active:scale-95 transition-all duration-300 mt-auto"
+                  className="flex items-center justify-center gap-1.5 sm:gap-2 w-full bg-gray-600 text-white font-bold text-xs sm:text-sm py-2.5 sm:py-3 rounded-md hover:bg-gray-700 active:scale-95 transition-all duration-300 mt-auto"
                 >
                   Find Out More
                   <svg
